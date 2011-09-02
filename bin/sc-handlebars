@@ -79,7 +79,7 @@ if (argv.known) {
 
 var output = [];
 if (!argv.simple) {
-  output.push('(function() {\n  var template = Handlebars.template, templates = SC.TEMPLATES;\n');
+  output.push('(function( SC, Handlebars ) {\n  var template = Handlebars.template, templates = SC.TEMPLATES;\n');
 }
 function processTemplate(template, root) {
   var path = template,
@@ -122,7 +122,7 @@ argv._.forEach(function(template) {
 
 // Output the content
 if (!argv.simple) {
-  output.push('})()');
+  output.push('})( window.SC, window.Handlebars );');
 }
 output = output.join('');
 

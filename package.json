@@ -11,7 +11,9 @@
   }
 , "main" : "./lib/main"
 , "dependencies": {
-    "handlebars": "1.0.x"
+    "handlebars": "1.0.x",
+    "optimist": "~0.2",
+    "uglify-js": "~1.0"
 }
 , "bin" : {
     "sc-handlebars" : "bin/sc-handlebars"
