@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var optimist = require('optimist')
-    .usage('Precompile handlebar templates.\nUsage: $0 template', {
+    .usage('Precompile sc handlebar templates.\nUsage: $0 template', {
       'f': {
         'type': 'string',
         'description': 'Output File',
@@ -58,7 +58,8 @@ var optimist = require('optimist')
     });
 
 var fs = require('fs'),
-    handlebars = require('../lib/handlebars'),
+    schb = require('sc-handlebars'),
+    handlebars = require('handlebars'),
     basename = require('path').basename,
     uglify = require('uglify-js');
 
@@ -78,7 +79,7 @@ if (argv.known) {
 
 var output = [];
 if (!argv.simple) {
-  output.push('(function() {\n  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};\n');
+  output.push('(function() {\n  var template = Handlebars.template, templates = SC.TEMPLATES;\n');
 }
 function processTemplate(template, root) {
   var path = template,
@@ -108,9 +109,9 @@ function processTemplate(template, root) {
     template = template.replace(/\.handlebars$/, '');
 
     if (argv.simple) {
-      output.push(handlebars.precompile(data, options) + '\n');
+      output.push(schb.precompile(data, options) + '\n');
     } else {
-      output.push('templates[\'' + template + '\'] = template(' + handlebars.precompile(data, options) + ');\n');
+      output.push('templates[\'' + template + '\'] = template(' + schb.precompile(data, options) + ');\n');
     }
   }
 }

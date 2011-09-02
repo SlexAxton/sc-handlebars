@@ -13,4 +13,7 @@
 , "dependencies": {
     "handlebars": "1.0.x"
 }
+, "bin" : {
+    "sc-handlebars" : "bin/sc-handlebars"
+}
 }
