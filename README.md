@@ -10,6 +10,18 @@ More or less, this is the same as the `handlebars` module in npm. It has the sam
 
 https://github.com/kpdecker/handlebars.js
 
+Just sub things that say `handlebars` with `sc-handlebars`
+
+Ugh, ok... Try this:
+
+`npm install sc-handlebars -g`
+
+`cd myapp/templates/mytemplate.handlebars`
+
+BOOM
+
+You should see compiled handlebars templates now. There are flags and stuff too, those will show up if you just type `sc-handlebars` after installation. It'll do files or directories and stuff too. woot.
+
 ## WTF is this
 
 I have a single wiki/doc on the who, what, and why, if you are interested in WTF this is:
