@@ -7,7 +7,7 @@
 , "keywords": "sproutcore precompile handlebars mustache template html"
 , "repository": 
   { "type": "git"
-  , "url": "git://github.com/SlexAxton/sc-handlebars-precompiler.git"
+  , "url": "git://github.com/SlexAxton/sc-handlebars.git"
   }
 , "main" : "./lib/main"
 , "dependencies": {
