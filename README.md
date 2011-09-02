@@ -2,7 +2,7 @@
 
 Pretty much what it sounds like. The biggest goal being the capability of precompiling templates on the serverside during the build process.
 
-Trying to come up with the best api, so feel free to fork and suggest. Alot of it is just proxied right into the handlebars module from @kpdecker (via @wycats )
+Forks welcome.
 
 ## Docs
 
