@@ -16,7 +16,7 @@ Ugh, ok... Try this:
 
 `npm install sc-handlebars -g`
 
-`cd myapp/templates/mytemplate.handlebars`
+`sc-handlebars myapp/templates/mytemplate.handlebars`
 
 BOOM
 
