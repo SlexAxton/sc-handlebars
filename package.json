@@ -1,14 +1,14 @@
-{ "name" : "sc-handlebars-precompiler"
-, "description" : "Sproutcore Handlebars Precompiler"
+{ "name" : "sc-handlebars"
+, "description" : "Sproutcore Handlebars Utility"
 , "version" : "1.0.2beta"
 , "homepage": "http://www.handlebarsjs.com/"
 , "author" : "Alex Sexton <Alex.Sexton@bazaarvoice.com>"
 , "engines" : ["node >=0.4.7"]
 , "keywords": "sproutcore precompile handlebars mustache template html"
-, "repository": {
-    "type": "git",
-    "url": "git://github.com/SlexAxton/sc-handlebars-precompiler.git"
-  },
+, "repository": 
+  { "type": "git"
+  , "url": "git://github.com/SlexAxton/sc-handlebars-precompiler.git"
+  }
 , "main" : "./lib/main"
 , "dependencies": {
     "handlebars": "1.0.x"
