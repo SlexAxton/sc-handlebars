@@ -207,6 +207,7 @@
                     buildMap[name] = content;
                 }
                 // START TMPL SPECIFICS
+                // TODO :: make sure on the clientside, that SC is known as this string, or change it.
                 require( ['sproutcore'], function ( SC ) {
                   // This strips all the paths and stuff to make the filename the template name.
                   // Feel free to change this logic if that isn't robust enough for you.

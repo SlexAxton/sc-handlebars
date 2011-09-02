@@ -10,6 +10,16 @@ More or less, this is the same as the `handlebars` module in npm. It has the sam
 
 https://github.com/kpdecker/handlebars.js
 
+## WTF is this
+
+I have a single wiki/doc on the who, what, and why, if you are interested in WTF this is:
+
+https://github.com/SlexAxton/sc-handlebars/wiki/Everything
+
+## Integration
+
+There's a requirejs plugin for adding this to your require app in the extras folder. It probably requires (no pun intended) some modification since there are no standard ways to include sproutcore into require (at least at this time).
+
 ## Version
 
 1.0.2beta  -- This just stays in sync with the last tested version of sproutcore handlebars.
