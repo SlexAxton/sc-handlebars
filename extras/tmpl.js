@@ -216,9 +216,10 @@
                   if ( ! SC.TEMPLATES[ scName ] ) {
                     SC.TEMPLATES[ scName ] = SC.Handlebars.compile( content );
                   }
+                  
+                  onLoad(content);
                 });
                 // END TMPL SPECIFICS
-                onLoad(content);
             },
 
             load: function (name, req, onLoad, config) {
